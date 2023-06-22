@@ -1,0 +1,122 @@
+{
+  "customerName": {
+    "key": "name",
+    "type": "string",
+    "valueType": "string"
+  },
+  "phone": {
+    "key": "phone",
+    "type": "number"
+  },
+  "email": {
+    "key": "email",
+    "type": "string"
+  },
+  "orderNo": {
+    "key": "refTpVoucherNo",
+    "type": "string",
+    "valueType": "string"
+  },
+  "orderDate": {
+    "key": "issueDate",
+    "type": "date",
+    "valueType": "date"
+  },
+  "orderAmount": {
+    "key": "billFinalAmount",
+    "type": "double",
+    "valueType": "double"
+  },
+  "orderTaxAmount": {
+    "key": "billTaxAmount",
+    "type": "double",
+    "valueType": "double"
+  },
+  "discountAmount": {
+    "key": "billDiscountAmount",
+    "type": "double",
+    "valueType": "double"
+  },
+  "address1": {
+    "key": "shipping",
+    "type": "object",
+    "valueType": "string",
+    "subObject": {
+      "key": "address",
+      "type": "string"
+    }
+  },
+  "state": {
+    "key": "shipping",
+    "type": "object",
+    "valueType": "string",
+    "subObject": {
+      "key": "state",
+      "type": "string"
+    }
+  },
+  "pincode": {
+    "key": "shipping",
+    "type": "object",
+    "valueType": "number",
+    "subObject": {
+      "key": "pincode",
+      "type": "number"
+    }
+  },
+  "city": {
+    "key": "shipping",
+    "type": "object",
+    "valueType": "string",
+    "subObject": {
+      "key": "city",
+      "type": "string"
+    }
+  },
+  "codCharge": {
+    "key": "otherCharges",
+    "type": "array",
+    "valueType": "number",
+    "subObject": {
+      "key": "COD",
+      "type": "number"
+    }
+  },
+  "orderItems": {
+    "key": "itemList",
+    "type": "array",
+    "valueType": "array",
+    "subArray": {
+      "lineNo": {
+        "key": "index",
+        "type": "number",
+        "valueType": "number"
+      },
+      "orderQty": {
+        "key": "qty",
+        "type": "number",
+        "valueType": "number"
+      },
+      "unitPrice": {
+        "key": "unitPrice",
+        "type": "double",
+        "valueType": "double"
+      },
+      "lineAmount": {
+        "key": "lineAmount",
+        "type": "double",
+        "valueType": "double"
+      },
+      "lineTaxAmount": {
+        "key": "taxAmount",
+        "type": "double",
+        "valueType": "double"
+      },
+      "discountAmount": {
+        "key": "discountAmount",
+        "type": "double",
+        "valueType": "double"
+      }
+    }
+  }
+}
